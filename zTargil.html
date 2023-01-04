@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drone Drill</title>
+    <link rel="stylesheet" href="zTargil.css/zTargil.css" />
+    <script defer src="zTargil.js/zTargil.js"></script>
+  </head>
+  <body>
+    <h1>Drone Rapair Service</h1>
+    <div id="droneRapairFormat" style="width: 60%; margin: auto;">
+      <form action="javascript:handleData()" id="myForm">
+        <input type="text" id="nameOfCostumer" placeholder="Costumer Name"><br><br>
+        <input type="number"  id="phone" placeholder="Costumer Number"><br><br>
+        <textarea  id="address" cols="20" rows="5" placeholder="Enter address including city, house number, and street name"></textarea><hr>
+        <h3>Are you a VIP?</h3>
+        <select  id="isVip">
+            <option selected disabled >are you a VIP?</option>
+            <option value="yesVip" id="yesVip">Yes</option>
+            <option value="notVIP" id="notVip">No</option>
+        </select><hr>
+        <input type="text" id="droneCompany" placeholder=" Enter Drone Company"><br><br>
+        <input type="text" id="droneType" placeholder="Enter Drone Type"><br><br>
+        <textarea  id="causeOfProblam" cols="20" rows="5" placeholder="What seems to be the problem?"></textarea><br><br>
+         <textarea  id="rapairDescription" cols="20" rows="5" placeholder="Rapair Description"></textarea> <br><br>
+         <select  id="insurance">
+            <option  selected disabled >Do you have insurance?</option>
+            <option value="noInsurance">No</option>
+            <option value="regulerInsurance">Reguler insurance</option>
+            <option value="extendedInsurance">Extended Insurance</option>
+            <option value="policy">Insurance Policy</option>
+         </select><br><br>
+         <input type="submit">
+         <input type="reset"> <hr>
+      </form>
+    </div>
+    <div id="myResult"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>date of drone submit</th>
+          <th>date of drone return</th>
+          <th>how many days left?</th>
+          <th>description of treatment</th>
+        </tr>
+      </thead>
+      <tbody id="userData"></tbody>
+    </table>
+  </body>
+</html>
